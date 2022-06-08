@@ -11,7 +11,7 @@
 # 文档
 
 * <a href="./doc/api">API文档</a>
-* <a href="./doc">配置文档</a>
+* <a href="./doc/sql">配置文档</a>
 
 
 
