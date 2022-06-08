@@ -1,0 +1,7 @@
+
+{
+  "coverOld": true,
+  "allInOne": true,
+  "outPath": "src/main/resources/static/doc",
+  "packageFilters": "com.dq.blog.controller.*"
+}

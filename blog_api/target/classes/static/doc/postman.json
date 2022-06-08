@@ -1,0 +1,564 @@
+{
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "78b90acc-e0db-40bc-b97a-c1efc006310d",
+    "name": "Dq_blog"
+  },
+  "item": [
+    {
+      "name": "文章-API",
+      "item": [
+        {
+          "name": "获取首页文章列表",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"page\": 1,\n  \"pageSize\": 10,\n  \"categoryId\": 697,\n  \"tagId\": 594,\n  \"year\": \"szzumv\",\n  \"month\": \"l3d82z\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "/articles/",
+              "path": [
+                "articles",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取首页文章列表",
+            "header": []
+          },
+          "description": "获取首页文章列表"
+        },
+        {
+          "name": "获取最热文章",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/articles/hot",
+              "path": [
+                "articles",
+                "hot"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取最热文章",
+            "header": []
+          },
+          "description": "获取最热文章"
+        },
+        {
+          "name": "获取最新文章",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/articles/new",
+              "path": [
+                "articles",
+                "new"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取最新文章",
+            "header": []
+          },
+          "description": "获取最新文章"
+        },
+        {
+          "name": "获取文章归档数据",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/articles/listArchives",
+              "path": [
+                "articles",
+                "listArchives"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取文章归档数据",
+            "header": []
+          },
+          "description": "获取文章归档数据"
+        },
+        {
+          "name": "根据Id 获取文章详情",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "/articles/view/248",
+              "path": [
+                "articles",
+                "view",
+                ":id"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "805",
+                  "description": "No comments found."
+                }
+              ]
+            },
+            "description": "根据Id 获取文章详情",
+            "header": []
+          },
+          "description": "根据Id 获取文章详情"
+        },
+        {
+          "name": "文章发布",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 688,\n  \"body\": {\n    \"content\": \"mo1fzr\",\n    \"contentHtml\": \"trbvf0\"\n  },\n  \"category\": {\n    \"id\": \"59\",\n    \"avatar\": \"rmnxzz\",\n    \"categoryName\": \"aleta.hahn\",\n    \"description\": \"hrbsb8\"\n  },\n  \"summary\": \"lbifh1\",\n  \"tags\": [\n    {\n      \"id\": \"59\",\n      \"tagName\": \"aleta.hahn\",\n      \"avatar\": \"a8u7fl\"\n    }\n  ],\n  \"title\": \"r9t4ne\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "/articles/publish",
+              "path": [
+                "articles",
+                "publish"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "文章发布",
+            "header": []
+          },
+          "description": "文章发布"
+        }
+      ]
+    },
+    {
+      "name": "发布文章-API",
+      "item": [
+        {
+          "name": "文章分类",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/categorys/",
+              "path": [
+                "categorys",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "文章分类",
+            "header": []
+          },
+          "description": "文章分类"
+        },
+        {
+          "name": "文章标签分类-详细",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/categorys/detail",
+              "path": [
+                "categorys",
+                "detail"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "文章标签分类-详细",
+            "header": []
+          },
+          "description": "文章标签分类-详细"
+        },
+        {
+          "name": "根据分类Id获取文章",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "/categorys/detail/505",
+              "path": [
+                "categorys",
+                "detail",
+                ":id"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "302",
+                  "description": "No comments found."
+                }
+              ]
+            },
+            "description": "根据分类Id获取文章",
+            "header": []
+          },
+          "description": "根据分类Id获取文章"
+        }
+      ]
+    },
+    {
+      "name": "评论-API",
+      "item": [
+        {
+          "name": "通过id 获取评论列表",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "/comments/article/771",
+              "path": [
+                "comments",
+                "article",
+                ":id"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "461",
+                  "description": "1"
+                }
+              ]
+            },
+            "description": "通过id 获取评论列表",
+            "header": []
+          },
+          "description": "通过id 获取评论列表"
+        },
+        {
+          "name": "发布文章评论",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"article\": {\n    \"id\": 983,\n    \"title\": \"z44ykc\",\n    \"summary\": \"dy4h7r\",\n    \"commentCounts\": 515,\n    \"viewCounts\": 212,\n    \"authorId\": 802,\n    \"bodyId\": 180,\n    \"categoryId\": 68,\n    \"weight\": 651,\n    \"createDate\": 65\n  },\n  \"articleId\": 915,\n  \"content\": \"ko5q8r\",\n  \"parent\": 761,\n  \"toUserId\": 153\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "/comments/create/change",
+              "path": [
+                "comments",
+                "create",
+                "change"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "发布文章评论",
+            "header": []
+          },
+          "description": "发布文章评论"
+        }
+      ]
+    },
+    {
+      "name": "文章图片上传-API",
+      "item": [
+        {
+          "name": "上传文件",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "image",
+                  "type": "file",
+                  "description": "No comments found.",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "/upload/",
+              "path": [
+                "upload",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "file",
+                  "value": "",
+                  "description": "No comments found."
+                }
+              ],
+              "variable": []
+            },
+            "description": "上传文件",
+            "header": []
+          },
+          "description": "上传文件"
+        }
+      ]
+    },
+    {
+      "name": "登录授权-API",
+      "item": [
+        {
+          "name": "用户登录授权返回Token",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"account\": \"39b2fp\",\n  \"password\": \"t14qk1\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "/login/",
+              "path": [
+                "login",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "用户登录授权返回Token",
+            "header": []
+          },
+          "description": "用户登录授权返回Token"
+        }
+      ]
+    },
+    {
+      "name": "退出登录-API",
+      "item": []
+    },
+    {
+      "name": "注册-API",
+      "item": [
+        {
+          "name": "注册用户",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"account\": \"5wjmhh\",\n  \"password\": \"hwx1w4\",\n  \"nickname\": \"zachery.spencer\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "/register/",
+              "path": [
+                "register",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "注册用户",
+            "header": []
+          },
+          "description": "注册用户"
+        }
+      ]
+    },
+    {
+      "name": "标签-API",
+      "item": [
+        {
+          "name": "查询最热标签",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/tags/hot",
+              "path": [
+                "tags",
+                "hot"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "查询最热标签",
+            "header": []
+          },
+          "description": "查询最热标签"
+        },
+        {
+          "name": "获取所有的标签",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/tags/",
+              "path": [
+                "tags",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有的标签",
+            "header": []
+          },
+          "description": "获取所有的标签"
+        },
+        {
+          "name": "获取标签的详细",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/tags/detail",
+              "path": [
+                "tags",
+                "detail"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取标签的详细",
+            "header": []
+          },
+          "description": "获取标签的详细"
+        },
+        {
+          "name": "通过标签的Id获取所有相关标签",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "/tags/detail/334",
+              "path": [
+                "tags",
+                "detail",
+                ":id"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "855",
+                  "description": "No comments found."
+                }
+              ]
+            },
+            "description": "通过标签的Id获取所有相关标签",
+            "header": []
+          },
+          "description": "通过标签的Id获取所有相关标签"
+        }
+      ]
+    },
+    {
+      "name": "测试-API",
+      "item": [
+        {
+          "name": "测试利用Authorization获取用户注册信息",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "/test/",
+              "path": [
+                "test",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "测试利用Authorization获取用户注册信息",
+            "header": []
+          },
+          "description": "测试利用Authorization获取用户注册信息"
+        }
+      ]
+    },
+    {
+      "name": "用户信息-API",
+      "item": [
+        {
+          "name": "获取用户基本信息 利用Token",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "/users/currentUser",
+              "path": [
+                "users",
+                "currentUser"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "description": "获取用户基本信息 利用Token",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "disabled": false,
+                "name": "Authorization",
+                "description": "No comments found."
+              }
+            ]
+          },
+          "description": "获取用户基本信息 利用Token"
+        }
+      ]
+    }
+  ]
+}
