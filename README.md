@@ -1,3 +1,5 @@
+
+
 # Blog
 
 
@@ -47,3 +49,23 @@
 
 
 
+
+
+<hr>
+
+* 权限管理案例
+* 本项目提供了完整的Spring Security 安全认证
+  * root 权限控制url （账户：root  密码：<code>root</code>）
+  * 成员（账户：dq  密码：<code>dq333</code>）
+
+<a href="http://www.dqstudy.work:8889/login.html">权限管理案例展示</a>
+
+* 登录页
+
+![image-20220706210557228](README.assets/image-20220706210557228.png)
+
+
+
+* 首页
+
+![image-20220706210706124](README.assets/image-20220706210706124.png)
