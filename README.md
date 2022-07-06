@@ -1,6 +1,6 @@
 
 
-# Blog
+# <a href="http://www.dqstudy.work:8080/#/">博客</a>
 
 
 
@@ -58,7 +58,7 @@
   * root 权限控制url （账户：root  密码：<code>root</code>）
   * 成员（账户：dq  密码：<code>dq333</code>）
 
-<a href="http://www.dqstudy.work:8889/login.html">权限管理案例展示</a>
+# <a href="http://www.dqstudy.work:8889/login.html">         ->                权限管理案例展示                         </a>
 
 * 登录页
 
