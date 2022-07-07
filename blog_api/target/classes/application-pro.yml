@@ -1,0 +1,33 @@
+server:
+  port: 8888
+spring:
+  # Mysql
+  datasource:
+    url: jdbc:mysql://43.138.12.46:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Dxq185613
+
+  #redis
+  redis:
+    host: 172.17.0.2
+    port: 6379
+  mvc:
+    servlet:
+      path: /api
+
+mybatis-plus:
+  configuration:
+    #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      table-prefix: ms_
+
+person:
+  name: duxiaoqiang
+
+
+qiniu:
+  accessKey: nca4vm2SnK-GBY3tDAJOgRmXxTIiWmkCexgKP3sx
+  accessSecretKey: 0DPEmPcGNC6tE_PXwcwh42X1PgEq1affl2cj5GWD

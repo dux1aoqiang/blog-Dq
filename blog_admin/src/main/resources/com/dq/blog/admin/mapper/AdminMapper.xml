@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--MyBatis配置文件-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--List<Permission> findPermissionByAdminId(Long adminId)-->
+<!--ms_permission.id, ms_permission.name, ms_permission.path, ms_permission.description-->
+<mapper namespace="com.dq.blog.admin.mapper.AdminMapper">
+    <select id="findPermissionByAdminId" resultType="com.dq.blog.admin.pojo.Permission">
+        SELECT *
+        FROM `ms_permission`
+        WHERE id in (SELECT ms_admin_permission.permission_id
+                     FROM ms_admin_permission
+                     WHERE ms_admin_permission.admin_id = #{adminId})
+    </select>
+</mapper>

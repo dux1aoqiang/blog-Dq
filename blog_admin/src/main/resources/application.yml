@@ -3,10 +3,10 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://43.138.12.46:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Dxq185613
+    password: 123456
 
 
 mybatis-plus:
